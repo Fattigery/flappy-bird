@@ -196,11 +196,16 @@ let bird = {
    * 点击小鸟飞
    */
   handleClick: function () {
-    this.el.onclick = e => {
+    this.el.addEventListener('click', e => {
       if (!e.target.classList.contains('start')) {
         this.birdStepY = -10;
       }
-    };
+    });
+    document.body.addEventListener('keydown', e => {
+      if (!e.target.classList.contains('start')) {
+        this.birdStepY = -10;
+      }
+    });
   },
 
   handleRestart() {
