@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="game">
+      <!-- 放置小鸟 -->
+      <div class="bird"></div>
+      <div class="start start-blue">点击开始</div>
+      <!-- 放置分数 -->
+      <div class="score">0</div>
+      <!-- 蒙版 -->
+      <div class="mask"></div>
+      <div class="end">
+        <div class="over">Game Over</div>
+        <div class="result">Your Results:</div>
+        <div class="final-score">0</div>
+
+        <ul class="rank-list"></ul>
+
+        <div class="restart">重新开始</div>
+      </div>
+    </div>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
